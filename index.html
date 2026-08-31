@@ -1,4 +1,4 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -9,20 +9,27 @@
 body { background-color: #0d0d0d; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
 .container { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 20px; width: 100%; }
 .site-logo { width: 85vw; height: auto; object-fit: contain; margin-bottom: 20px; }
+.text-link { text-decoration: none; color: inherit; width: 100%; display: block; }
 .text-main { font-size: 8vw; font-weight: bold; white-space: nowrap; margin-bottom: 10px; width: 100%; }
-.text-sub { font-size: 3vw; font-weight: normal; opacity: 0.4; white-space: nowrap; width: 100%; }
+.sub-container { font-size: 3vw; font-weight: normal; opacity: 0.4; white-space: nowrap; width: 100%; display: flex; justify-content: center; gap: 8px; }
+.text-sub-link { text-decoration: none; color: inherit; }
 @media (max-width: 600px) { 
   .site-logo { width: 92vw; margin-bottom: 15px; }
   .text-main { font-size: 11vw; } 
-  .text-sub { font-size: 4.5vw; } 
+  .sub-container { font-size: 4.5vw; } 
 }
 </style>
 </head>
 <body>
 <div class="container">
 <img src="logo.png" class="site-logo" alt="Logo">
+<a href="https://t.me" target="_blank" class="text-link">
 <div class="text-main">@nineonetwotwo</div>
-<div class="text-sub">@z9122, @r_drawothermodels</div>
+</a>
+<div class="sub-container">
+<a href="https://t.me" target="_blank" class="text-sub-link">@z9122,</a>
+<a href="https://t.me" target="_blank" class="text-sub-link">@r_drawothermodels</a>
+</div>
 </div>
 </body>
 </html>
